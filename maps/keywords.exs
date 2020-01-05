@@ -9,8 +9,9 @@ defmodule Canvas do
     IO.puts "Background:  #{Keyword.get(options, :bg) }"
     IO.puts "Font:        #{Keyword.get(options, :font) }"
     IO.puts "Pattern:     #{Keyword.get(options, :pattern, "solid") }"
-    IO.puts "Stylet       #{inspect Keyword.get_values(options, :style) }"
+    IO.puts "Style:       #{inspect Keyword.get_values(options, :style) }"
   end
 end
 
 Canvas.draw_text("hello", fg: "red", style: "italic", style: "bold")
+Canvas.draw_text("test", style: "bold")
